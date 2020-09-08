@@ -1,4 +1,4 @@
-package project.akbaralzaini.loudryku;
+package project.akbaralzaini.laudryku;
 
 import org.junit.Test;
 
