@@ -17,4 +17,22 @@
     <string name="login_ke_akun_anda">Login Ke Akun Anda</string>
     <string name="backgroud">backgroud</string>
     <string name="back_button">back button</string>
+    <string name="register">Register</string>
+    <string name="daftarkan_laundry_kamu">Daftarkan Laundry Kamu</string>
+    <string name="alamat">Alamat</string>
+    <string name="alamat_lengkap">Alamat Lengkap</string>
+    <string name="tlp">081234567890</string>
+    <string name="nomor_telpon">Nomor telpon</string>
+    <string name="laundryku">Laundryku</string>
+    <string name="nama_laundry">Nama Laundry</string>
+    <string name="nama_pemilik">Nama Pemilik</string>
+    <string name="daftar">Daftar</string>
+    <string name="login_bwah">Login</string>
+    <string name="sudah_punya_akun">Sudah Punya akun?</string>
+    <string name="masukan_nomor_telpon">masukan nomor telpon</string>
+    <string name="masukan_nama">masukan nama</string>
+    <string name="masukan_nama_laundry">masukan nama Laundry</string>
+    <string name="foto_laundry">Foto Laundry</string>
+    <string name="belum_ada_file_dipilih">Belum Ada File dipilih</string>
+    <string name="upload_foto">Upload Foto</string>
 </resources>

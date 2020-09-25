@@ -78,7 +78,7 @@
             android:textSize="14sp"
             android:layout_marginTop="12dp"
             android:inputType="textPassword"
-            android:hint="@string/password"
+            android:hint="@string/passwords"
             android:padding="8dp"
             android:importantForAutofill="no" />
 

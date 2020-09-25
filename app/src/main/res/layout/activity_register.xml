@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/back_button" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_bg"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/backgroud" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/deskripsi"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-40dp"
+        android:text="@string/daftarkan_laundry_kamu"
+        android:textColor="@color/putih"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_radius_green"
+        android:padding="18dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama_pemilik"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:id="@+id/nama_pemilik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_white_corner"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/masukan_nama"
+                    android:padding="8dp"
+                    android:inputType="text"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nomor_telpon"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:id="@+id/nomor_telpon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_white_corner"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/masukan_nomor_telpon"
+                    android:padding="8dp"
+                    android:inputType="text"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius_white_corner"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/email_example_com"
+            android:padding="8dp"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passwords"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius_white_corner"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:padding="8dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_laundry"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/nama_laundry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius_white_corner"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/masukan_nama_laundry"
+            android:padding="8dp"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/alamat_lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius_white_corner"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/alamat_lengkap"
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/foto_laundry"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@android:color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_foto"/>
+            <TextView
+                android:id="@+id/nama_file_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/belum_ada_file_dipilih"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_daftar"
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/daftar"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/putih"
+            android:background="@drawable/shape_radius_green_bg"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sudah_punya_akun"
+                android:gravity="right"
+                android:layout_weight="1"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:id="@+id/hyper_login"
+                android:layout_marginStart="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/login_bwah"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

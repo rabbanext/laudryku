@@ -53,6 +53,7 @@
             android:background="@drawable/shape_radius_white"/>
 
         <Button
+            android:id="@+id/btn_register"
             android:layout_marginTop="22dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
