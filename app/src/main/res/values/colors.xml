@@ -2,7 +2,10 @@
 <resources>
     <color name="colorPrimary">#56D7BC</color>
     <color name="colorPrimaryDark">#56D7BC</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#FFF</color>
     <color name="background">#56D7BC</color>
     <color name="putih">#ffff</color>
+    <color name="abuabu">#707070</color>
+    <color name="secabuabu">#A8A8A8</color>
+    <color name="bayangan">#AD333333</color>
 </resources>

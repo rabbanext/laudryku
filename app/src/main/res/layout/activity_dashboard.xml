@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    tools:context=".DashboardActivity">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+
+    <project.akbaralzaini.laudryku.CurvedBottomNavigationView
+        app:itemIconSize="19dp"
+        app:labelVisibilityMode="unlabeled"
+        android:layout_width="match_parent"
+        android:id="@+id/bottom"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:layout_centerInParent="true"
+        app:borderWidth="0dp"
+        android:scaleType="center"
+        android:backgroundTint="@color/background"
+        android:id="@+id/camera_ar"
+        android:layout_marginBottom="-20dp"
+        android:src="@drawable/ic_add_black_24dp"/>
+
+</RelativeLayout>
