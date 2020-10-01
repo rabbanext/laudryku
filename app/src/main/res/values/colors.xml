@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#56D7BC</color>
     <color name="colorPrimaryDark">#56D7BC</color>
-    <color name="colorAccent">#FFF</color>
+    <color name="colorAccent">#4CAF50</color>
     <color name="background">#56D7BC</color>
     <color name="putih">#ffff</color>
     <color name="abuabu">#707070</color>

@@ -2,20 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="project.akbaralzaini.laudryku">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/iconapp"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@drawable/iconmachine"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DashboardActivity">
+        <activity android:name=".userInterface.DashboardActivity">
         </activity>
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".userInterface.RegisterActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".userInterface.LoginActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".userInterface.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

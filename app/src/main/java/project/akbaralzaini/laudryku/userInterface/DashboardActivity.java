@@ -1,4 +1,4 @@
-package project.akbaralzaini.laudryku;
+package project.akbaralzaini.laudryku.userInterface;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -10,6 +10,9 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import project.akbaralzaini.laudryku.CurvedBottomNavigationView;
+import project.akbaralzaini.laudryku.R;
 
 public class DashboardActivity extends FragmentActivity {
     private FrameLayout fMainFarme;

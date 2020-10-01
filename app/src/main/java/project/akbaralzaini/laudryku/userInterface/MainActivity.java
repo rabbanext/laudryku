@@ -1,10 +1,12 @@
-package project.akbaralzaini.laudryku;
+package project.akbaralzaini.laudryku.userInterface;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import project.akbaralzaini.laudryku.R;
 
 public class MainActivity extends Activity {
     Button btnLogin;
