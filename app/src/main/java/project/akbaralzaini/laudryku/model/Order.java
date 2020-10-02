@@ -1,18 +1,92 @@
 package project.akbaralzaini.laudryku.model;
 
-public class Order {
-    private int id;
-    private String nama_pemesan;
-    private String tanggal_pesanan;
-    private String total_bayar;
-    private String status;
+import com.google.gson.annotations.SerializedName;
 
-    public int getId() {
-        return id;
+public class Order {
+    @SerializedName("id_laundry")
+    private String id_laundry;
+    @SerializedName("id_order")
+    private String id_order;
+    @SerializedName("tanggal_masuk")
+    private String tanggal_masuk;
+    @SerializedName("tanggal_selesai")
+    private String tanggal_selesai;
+    @SerializedName("tanggal_diambil")
+    private String tanggal_diambil;
+    @SerializedName("status")
+    private String status;
+    @SerializedName("nama_pemesan")
+    private String nama_pemesan;
+    @SerializedName("no_telpon")
+    private String no_telpon;
+    @SerializedName("alamat")
+    private String alamat;
+    @SerializedName("dp")
+    private String dp;
+    @SerializedName("total_bayar")
+    private String total_bayar;
+
+
+    public Order(String id_laundry, String id_order, String tanggal_masuk, String tanggal_selesai, String tanggal_diambil, String status, String nama_pemesan, String no_telpon, String alamat, String dp, String total_bayar) {
+        this.id_laundry = id_laundry;
+        this.id_order = id_order;
+        this.tanggal_masuk = tanggal_masuk;
+        this.tanggal_selesai = tanggal_selesai;
+        this.tanggal_diambil = tanggal_diambil;
+        this.status = status;
+        this.nama_pemesan = nama_pemesan;
+        this.no_telpon = no_telpon;
+        this.alamat = alamat;
+        this.dp = dp;
+        this.total_bayar = total_bayar;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public String getId_laundry() {
+        return id_laundry;
+    }
+
+    public void setId_laundry(String id_laundry) {
+        this.id_laundry = id_laundry;
+    }
+
+    public String getId_order() {
+        return id_order;
+    }
+
+    public void setId_order(String id_order) {
+        this.id_order = id_order;
+    }
+
+    public String getTanggal_masuk() {
+        return tanggal_masuk;
+    }
+
+    public void setTanggal_masuk(String tanggal_masuk) {
+        this.tanggal_masuk = tanggal_masuk;
+    }
+
+    public String getTanggal_selesai() {
+        return tanggal_selesai;
+    }
+
+    public void setTanggal_selesai(String tanggal_selesai) {
+        this.tanggal_selesai = tanggal_selesai;
+    }
+
+    public String getTanggal_diambil() {
+        return tanggal_diambil;
+    }
+
+    public void setTanggal_diambil(String tanggal_diambil) {
+        this.tanggal_diambil = tanggal_diambil;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public String getNama_pemesan() {
@@ -23,12 +97,28 @@ public class Order {
         this.nama_pemesan = nama_pemesan;
     }
 
-    public String getTanggal_pesanan() {
-        return tanggal_pesanan;
+    public String getNo_telpon() {
+        return no_telpon;
     }
 
-    public void setTanggal_pesanan(String tanggal_pesanan) {
-        this.tanggal_pesanan = tanggal_pesanan;
+    public void setNo_telpon(String no_telpon) {
+        this.no_telpon = no_telpon;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getDp() {
+        return dp;
+    }
+
+    public void setDp(String dp) {
+        this.dp = dp;
     }
 
     public String getTotal_bayar() {
@@ -37,13 +127,5 @@ public class Order {
 
     public void setTotal_bayar(String total_bayar) {
         this.total_bayar = total_bayar;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 }

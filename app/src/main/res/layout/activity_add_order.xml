@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".userInterface.AddOrderActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/laundrybg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginTop="-30dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/backgroud" />
+
+    <RelativeLayout
+        android:id="@+id/top_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/back_button" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Order"
+            android:textColor="@color/putih"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/top_dashboard"
+        android:id="@+id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_radius_green"
+        android:padding="18dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/roboto"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/nama_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_radius_white_corner"
+                android:hint="@string/masukan_nama"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telpon"
+                android:layout_marginTop="12dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/roboto"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/nomor_telpon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_radius_white_corner"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:hint="@android:string/emptyPhoneNumber"
+                android:padding="8dp"
+                android:inputType="text"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:id="@+id/jenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_radius_white_corner"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/email_example_com"
+                    android:padding="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Berat"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/berat_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_white_corner"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:hint="0.00"
+                    android:padding="8dp"
+                    android:inputType="numberDecimal"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_add_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius_green_bg"
+            android:layout_marginTop="12dp"
+            android:text="Tambah Barang"
+            android:textColor="@color/putih"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Bayar"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 58.000"
+            android:textColor="@color/abuabu"
+            android:fontFamily="@font/roboto"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/button_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius_green_bg"
+            android:layout_marginTop="18dp"
+            android:text="Tambah"
+            android:textColor="@color/putih"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

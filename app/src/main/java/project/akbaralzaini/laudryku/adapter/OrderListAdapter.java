@@ -11,6 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import project.akbaralzaini.laudryku.R;
@@ -34,8 +37,9 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.MyVi
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull OrderListAdapter.MyViewHolder holder, int position) {
+
         holder.tvNamaPemesan.setText(orderList.get(position).getNama_pemesan());
-        holder.tvTanggalOrder.setText(orderList.get(position).getTanggal_pesanan());
+        holder.tvTanggalOrder.setText(orderList.get(position).getTanggal_selesai());
         holder.tvTotalOrder.setText("Rp. "+orderList.get(position).getTotal_bayar());
         switch (orderList.get(position).getStatus()){
             case "dilaundry":

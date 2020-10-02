@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".userInterface.ListOrderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:id="@+id/top_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="16dp"
+                android:contentDescription="@string/back_button" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List Order"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/laundrybg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="-80dp"
+            android:layout_marginTop="-30dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/backgroud" />
+
+
+
+        <LinearLayout
+            android:layout_below="@id/top_dashboard"
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_radius_green"
+            android:padding="18dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pesanan"
+                android:textColor="@color/abuabu"
+                android:fontFamily="@font/roboto"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_recent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
