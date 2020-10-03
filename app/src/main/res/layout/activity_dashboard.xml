@@ -41,7 +41,7 @@
         app:borderWidth="0dp"
         android:scaleType="center"
         android:backgroundTint="@color/background"
-        android:id="@+id/camera_ar"
+        android:id="@+id/add_order"
         android:layout_marginBottom="-20dp"
         android:src="@drawable/ic_add_black_24dp"/>
 
