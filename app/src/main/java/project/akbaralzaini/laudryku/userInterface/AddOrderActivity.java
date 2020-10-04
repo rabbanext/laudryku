@@ -26,6 +26,7 @@ import java.util.Locale;
 
 import project.akbaralzaini.laudryku.R;
 import project.akbaralzaini.laudryku.model.JenisBarang;
+import project.akbaralzaini.laudryku.model.Order;
 import project.akbaralzaini.laudryku.rest.ApiClient;
 import project.akbaralzaini.laudryku.rest.JenisBarangApiInterface;
 import retrofit2.Call;
@@ -33,7 +34,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class AddOrderActivity extends Activity {
-    private Button btnAddDetail;
+    private Button btnAddDetail,btnTambahOrder;
     private LinearLayout llDetail;
     private EditText edtNamaPemesan,edtTlp,edtBerat;
     private TextView tvTotal;
@@ -51,6 +52,12 @@ public class AddOrderActivity extends Activity {
         sDaftarJenis = findViewById(R.id.jenis);
         edtBerat = findViewById(R.id.berat_order);
         tvTotal = findViewById(R.id.total_bayar);
+        edtNamaPemesan = findViewById(R.id.nama_order);
+        edtTlp = findViewById(R.id.nomor_telpon);
+        btnTambahOrder = findViewById(R.id.button_tambah);
+
+
+        //spinner dan detail
         tvTotal.setText("Rp. 0");
         populateSpinner();
 
@@ -76,6 +83,7 @@ public class AddOrderActivity extends Activity {
                 updateTotalBayar(harga,true);
                 ImageView btnRemove = (ImageView) addView.findViewById(R.id.delete);
                 btnRemove.setOnClickListener(v1 -> {
+                    updateTotalBayar(harga,false);
                     ((LinearLayout) addView.getParent()).removeView(addView);
 
                 });
@@ -90,6 +98,13 @@ public class AddOrderActivity extends Activity {
             }
         });
 
+        btnTambahOrder.setOnClickListener(v -> {
+            addOrder();
+        });
+    }
+
+    private void addOrder() {
+        //Order order = new Order(2,)
     }
 
     private void updateTotalBayar(float harga,boolean p) {

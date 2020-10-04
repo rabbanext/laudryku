@@ -13,8 +13,8 @@
         android:roundIcon="@drawable/iconmachine"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".userInterface.AddOrderActivity"></activity>
-        <activity android:name=".userInterface.DashboardActivity"></activity>
+        <activity android:name=".userInterface.AddOrderActivity" />
+        <activity android:name=".userInterface.DashboardActivity" />
         <activity android:name=".userInterface.RegisterActivity" />
         <activity
             android:name=".userInterface.LoginActivity"

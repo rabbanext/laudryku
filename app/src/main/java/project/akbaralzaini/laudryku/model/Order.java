@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class Order {
     @SerializedName("id_laundry")
-    private String id_laundry;
+    private int id_laundry;
     @SerializedName("id_order")
     private String id_order;
     @SerializedName("tanggal_masuk")
@@ -27,12 +27,11 @@ public class Order {
     private String total_bayar;
 
 
-    public Order(String id_laundry, String id_order, String tanggal_masuk, String tanggal_selesai, String tanggal_diambil, String status, String nama_pemesan, String no_telpon, String alamat, String dp, String total_bayar) {
+    public Order(int id_laundry, String id_order, String tanggal_masuk, String tanggal_selesai, String status, String nama_pemesan, String no_telpon, String alamat, String dp, String total_bayar) {
         this.id_laundry = id_laundry;
         this.id_order = id_order;
         this.tanggal_masuk = tanggal_masuk;
         this.tanggal_selesai = tanggal_selesai;
-        this.tanggal_diambil = tanggal_diambil;
         this.status = status;
         this.nama_pemesan = nama_pemesan;
         this.no_telpon = no_telpon;
@@ -41,11 +40,11 @@ public class Order {
         this.total_bayar = total_bayar;
     }
 
-    public String getId_laundry() {
+    public int getId_laundry() {
         return id_laundry;
     }
 
-    public void setId_laundry(String id_laundry) {
+    public void setId_laundry(int id_laundry) {
         this.id_laundry = id_laundry;
     }
 
