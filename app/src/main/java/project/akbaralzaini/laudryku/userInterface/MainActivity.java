@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         sharedPrefManager = new SharedPrefManager(this);
+        //sharedPrefManager.saveSPBoolean(SharedPrefManager.SP_SUDAH_LOGIN,false);
         if (sharedPrefManager.getSPSudahLogin()){
             Intent home = new Intent(MainActivity.this,DashboardActivity.class);
             startActivity(home);
