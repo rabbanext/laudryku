@@ -14,9 +14,7 @@ public class JenisBarang {
     @SerializedName("lama_waktu")
     private int lama_waktu;
 
-    public JenisBarang(String id_jenis, String id_laundry, String nama_jenis, int harga_jenis, int lama_waktu) {
-        this.id_jenis = id_jenis;
-        this.id_laundry = id_laundry;
+    public JenisBarang(String nama_jenis, int harga_jenis, int lama_waktu) {
         this.nama_jenis = nama_jenis;
         this.harga_jenis = harga_jenis;
         this.lama_waktu = lama_waktu;

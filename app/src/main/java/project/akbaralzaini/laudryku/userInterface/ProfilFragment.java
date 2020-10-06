@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Objects;
@@ -27,6 +28,7 @@ public class ProfilFragment extends Fragment {
     private TextView tvNoTlp;
     private TextView tvAlamat;
     private TextView tvEmail;
+    private Button btnKelolaJenis;
     private SharedPrefManager sharedPrefManager;
 
 
@@ -49,8 +51,13 @@ public class ProfilFragment extends Fragment {
         tvNamaLaundry = rootView.findViewById(R.id.nama_laundry);
         tvNoTlp = rootView.findViewById(R.id.nomor_tlp);
         tvEmail = rootView.findViewById(R.id.email_laundry);
-
+        btnKelolaJenis = rootView.findViewById(R.id.kelola_jenis_barang);
         refresh();
+
+        btnKelolaJenis.setOnClickListener(v -> {
+            Intent kelola = new Intent(getContext(),JenisBarangActivity.class);
+            startActivity(kelola);
+        });
 
         tvLogout.setOnClickListener(v -> {
             sharedPrefManager.saveSPBoolean(SharedPrefManager.SP_SUDAH_LOGIN, false);

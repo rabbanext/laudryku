@@ -175,6 +175,7 @@
                 android:layout_margin="12dp"
                 android:fontFamily="@font/roboto"/>
             <Button
+                android:id="@+id/kelola_jenis_barang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_radius_white"
